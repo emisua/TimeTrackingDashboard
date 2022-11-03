@@ -1,5 +1,5 @@
 {
-  "homepage":"https://emisua.github.io/Time-tracking-Dashboard",
+  "homepage":"https://emisua.github.io/time-tracking-dashboard",
   "name": "time-tracking",
   "private": true,
   "version": "0.0.0",
@@ -9,7 +9,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
