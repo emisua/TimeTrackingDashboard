@@ -16,10 +16,12 @@ const Card = ({ card, time }) => {
             />
           </span>
         </div>
-        <h3 className='h1'>{timeframes[time].current}hrs</h3>
-        <span>
-          Last {lastTime()} - {timeframes[time].previous}hrs
-        </span>
+        <div className='times'>
+          <h3 className='h1'>{timeframes[time].current}hrs</h3>
+          <span>
+            Last {lastTime()} - {timeframes[time].previous}hrs
+          </span>
+        </div>
       </div>
     </div>
   )

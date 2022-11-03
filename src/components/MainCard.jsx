@@ -10,9 +10,7 @@ const MainCard = ({ time, setTime }) => {
         />
         <div className='content'>
           <span>Report for</span>
-          <h1>
-            Jeremy<br></br>Robson
-          </h1>
+          <h1>Jeremy Robson</h1>
         </div>
       </header>
       <Nav
