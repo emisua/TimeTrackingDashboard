@@ -7,7 +7,10 @@ function App() {
   const [time, setTime] = useState('daily')
   return (
     <div className='container'>
-      <MainCard setTime={setTime} />
+      <MainCard
+        setTime={setTime}
+        time={time}
+      />
       <CardList time={time} />
     </div>
   )

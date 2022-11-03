@@ -3,77 +3,174 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 #root{
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: hsl(226, 43%, 10%);
+  font-family: 'Rubik', sans-serif;
 }
 
 .container{
-  max-width: 90%;
+  max-width:78%;
+  width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 150px);
-  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.4rem;
 }
 
 .mainCard{
-  background-color: orange;
+  background-color: hsl(235, 46%, 20%);
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 1vw;
   grid-row: 1/3;
 }
 
 .mainCard header{
-  background-color: cadetblue;
-  padding: 1rem;
+  background-color: hsl(246, 80%, 60%);
+  padding: 1.5rem;
+  color: #fff;
+  min-height: 70%;
+  border-radius: 1vw;
 }
 
-.mainCard nav{
-  padding: 1rem;
+.mainCard header h1{
+  font-weight: 300;
+  font-size: 2.8vw;
+}
+
+.mainCard header .content span{
+  font-size: 1vw;
+  opacity: .5;
+}
+
+.mainCard header .content{
+  margin-top: 1.5rem;
 }
 
 .mainCard img{
-  width: 46px;
+  width: 42%;
   border: 2px solid #fff;
   border-radius: 100%;
-
 }
 
-nav ul{
+.mainCard nav{
+  padding: 1.2rem 1.5rem;
+  height: 30%;
+}
+
+.mainCard nav ul{
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
-nav a{
+.mainCard nav a{
   cursor: pointer;
-  color: #fff;
-  opacity: .7;
+  color: hsl(235, 45%, 61%);
+  font-size: .9rem;
 }
 
-nav a:hover{
-  opacity: 1;
+.mainCard nav a:hover,
+.mainCard nav a.active{
+  color: #fff;
+}
+
+.cardBody{
+  background-color: hsl(235, 46%, 20%);
+  padding: 1.5rem;
+  border-radius: 1vw;
+  color: #fff;
+  margin-top: -10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cardBody:hover{
+  background-color: hsl(235, 46%, 35%);
+}
+
+.cardBody h4{
+  font-weight: 500;
+  font-size: 1.24vw;
 }
 
 .card{
-  background-color: red;
-  padding: 1rem;
-  border-radius: 10px;
-  color: #fff;
+  border-radius: 1vw;
+  aspect-ratio: 1/.93;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.card img{
+  width: 15px;
+}
+
+.card .dots{
+  cursor: pointer;
 }
 
 .card .title{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1rem;
+  margin-top: -4px;
 }
 
 .card h3{
-  font-size: 2rem;
+  font-size: 3.8vw;
   font-weight: 300;
+  margin-bottom: .1rem;
 }
 
 .card span{
-  font-size: .8rem;
+  font-size: 1vw;
+  color: hsl(236, 100%, 87%)
+}
 
+.cardimg{
+  padding-top: 4vw !important;
+  background-repeat: no-repeat;
+  background-size: 30%;
+}
+.work{
+  background-color: hsl(15, 100%, 70%);
+  background-image: url(../public/icon-work.svg);
+  background-position: 90% center;
+}
+.play{
+  background-color: hsl(195, 74%, 62%);
+  background-image: url(../public/icon-play.svg);
+  background-position: 90% -5px;
+}
+.study{
+  background-color: hsl(348, 100%, 68%);
+  background-image: url(../public/icon-study.svg);
+  background-position: 92% -5px;
+}
+.exercise{
+  background-color: hsl(145, 58%, 55%);
+  background-image: url(../public/icon-exercise.svg);
+  background-position: 92% 0px;
+}
+.social{
+  background-color: hsl(264, 64%, 52%);
+  background-image: url(../public/icon-social.svg);
+  background-position: 92% -12px;
+  background-size: 30%;
+}
+.self{
+  background-color: hsl(43, 84%, 65%);
+  background-image: url(../public/icon-self-care.svg);
+  background-position: 92% -8px;
+  background-size: 25%;
 }

@@ -1,5 +1,6 @@
 import jeremy from '../assets/image-jeremy.png'
-const MainCard = ({ setTime }) => {
+import Nav from './Nav'
+const MainCard = ({ time, setTime }) => {
   return (
     <div className='mainCard'>
       <header>
@@ -14,19 +15,10 @@ const MainCard = ({ setTime }) => {
           </h1>
         </div>
       </header>
-      <nav>
-        <ul>
-          <li onClick={() => setTime('daily')}>
-            <a>Daily</a>
-          </li>
-          <li onClick={() => setTime('weekly')}>
-            <a>Weekly</a>
-          </li>
-          <li onClick={() => setTime('monthly')}>
-            <a>Monthly</a>
-          </li>
-        </ul>
-      </nav>
+      <Nav
+        time={time}
+        setTime={setTime}
+      />
     </div>
   )
 }
