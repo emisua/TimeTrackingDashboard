@@ -1,9 +1,15 @@
-
+import { useState } from 'react'
+import CardList from './components/CardList'
+import MainCard from './components/MainCard'
 import './App.css'
 
 function App() {
+  const [time, setTime] = useState('daily')
   return (
-    <h1>Time tracking</h1>
+    <div className='container'>
+      <MainCard setTime={setTime} />
+      <CardList time={time} />
+    </div>
   )
 }
 
